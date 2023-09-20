@@ -19,7 +19,7 @@ public class SafeZone : MonoBehaviour
         }
     }
 
-    void onTriggerExit(Collider other)
+    void OnTriggerExit(Collider other)
     {
         if (other.gameObject.GetComponent<Player>() != null)
         {

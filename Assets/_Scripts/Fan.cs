@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class Fan : MonoBehaviour
 {
@@ -14,10 +15,12 @@ public class Fan : MonoBehaviour
     private void Start()
     {
         player = FindObjectOfType<Player>();
-        lifeTime = player.timeTillDisaster;
+        System.Random random = new System.Random();
+        float randomFloat = (float)random.NextDouble() * player.timeRadomize;
+        lifeTime = player.timeTillDisaster + randomFloat;
         rb = GetComponent<Rigidbody>();
     }
-    private void Update()
+    private void FixedUpdate()
     {
         if (rotationSpeed > 0)
         {
