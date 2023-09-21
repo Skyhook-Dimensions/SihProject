@@ -12,5 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/morgue.unity
     guid: 845128cf95f90184697fffb609346de8
   m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 240b1156cf86eec4eb9372b1f620f5f2, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 6732c7c0b0aec5f47bbcdde1d9f3aaba, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: faf1bfdbe97bf7643b6dca3c79a53a0b, type: 2}
