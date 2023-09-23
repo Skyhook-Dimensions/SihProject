@@ -14,6 +14,6 @@ public class SoundOncollision : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        soundManager.Play(gameObject,soundName,1,false);
+        soundManager.Play(gameObject,soundName);
     }
 }
